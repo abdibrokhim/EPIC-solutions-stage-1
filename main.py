@@ -164,13 +164,45 @@ def not_divisible(n):
     print(n)
 
 
+def reverseInGroups():
+    N = 5
+    K = 3
+    arr = [1, 2, 3, 4, 5]
+
+    # diff = N - K
+    #
+    # start = arr[:-diff]
+    # end = arr[-diff:]
+    #
+    # rev_start = start[::-1]
+    # rev_end = end[::-1]
+    #
+    # print(start)
+    # print(end)
+    #
+    # print(rev_start)
+    # print(rev_end)
+    #
+    # new_arr = rev_start + rev_end
+    # print(new_arr)
+
+    j = 0
+    for i in range(j + K, N, K):
+        arr[j:i] = reversed(arr[j:i])
+        print(arr[j:i])
+        j = i
+    arr[j:N] = reversed(arr[j:N])
+    print(arr[j:N])
+
+
 def main():
     # min_bea_num()
     # got_0()
     # diff_words()
     # is_palindrome()
     # can_cannot_make()
-    not_divisible(20)
+    # not_divisible(20)
+    reverseInGroups()
 
 
 if __name__ == '__main__':

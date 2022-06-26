@@ -164,8 +164,6 @@ def not_divisible(n):
     print(n)
 
 
-
-
 def main():
     # min_bea_num()
     # got_0()
